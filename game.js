@@ -110,12 +110,8 @@ function checkAnswer(currentLevel){
             nextSequence();
         }, 1000);
         userClickedPattern = [];
-    }else if(gamePattern.length && userClickedPattern.length < 1){
-        $("#level-title").text("Press Start Before Starting the Game");
-
-        level = 0;
-        gamePattern = [];
-        userClickedPattern = [];
+    }else if(level > 1 && gamePattern[0] !== userClickedPattern[0]){
+        startOver();
     }
 }
 
