@@ -4,32 +4,30 @@
 
 body {
   text-align: center;
-  background-color: #011F3F;
+  background-color: #011f3f;
 }
 
 #level-title {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 2.5rem;
-  margin:  5%;
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  margin: 10%;
   margin-bottom: 1.5rem;
-  color: #FEF2BF;
+  color: #fef2bf;
 }
-
 .container {
-  display: block;
-  width: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   margin: auto;
 }
-
 .btn {
-  margin: 15px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  margin: 15px;
+  height: 300px;
+  width: 300px;
   border: 10px solid black;
   border-radius: 20%;
 }
-
 .game-over {
   background-color: red;
   opacity: 0.8;
@@ -67,67 +65,124 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8rem;
-  margin-top: 1rem;
+  gap: 10rem;
 }
-
 .footer .top .btnft {
   position: relative;
-  width: 8rem;
-  height: 3rem;
-  line-height: 3rem;
+  margin-top: 5rem;
+  width: 12rem;
+  height: 5rem;
+  line-height: 5rem;
   background-color: transparent;
   border-radius: 1.5rem;
   cursor: pointer;
   border: 2px solid var(--btn-color);
-  font-family: 'Press Start 2P', cursive;
-  font-size: .8rem;
-  color:var(--btn-color);
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.2rem;
+  color: var(--btn-color);
   font-weight: bold;
-  transition: .3s ease-out;
+  transition: 0.3s ease-out;
   text-transform: uppercase;
 }
-
-.footer .top .btnft:hover {
-  background-color: var(--btn-color);
-  color: #fff;
-}
-
 .footer .bot p {
-  margin-top: 2.8rem;
-  font-size: 1rem;
+  margin-top: 24rem;
+  font-size: 1.8rem;
   color: aliceblue;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   letter-spacing: 1px;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px) {
   #level-title {
-    font-size: 3rem;
-    margin: 10%;
+    font-family: "Press Start 2P", cursive;
+    font-size: 2.5rem;
+    margin: 5%;
+    margin-bottom: 1.5rem;
+    color: #fef2bf;
   }
+
   .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: block;
+    width: 50%;
+    margin: auto;
   }
+
   .btn {
     margin: 15px;
-    height: 300px;
-    width: 300px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
   }
+
+  .game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
+
+  .red {
+    background-color: red;
+  }
+
+  .green {
+    background-color: green;
+  }
+
+  .blue {
+    background-color: blue;
+  }
+
+  .yellow {
+    background-color: yellow;
+  }
+
+  .pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .footer .top {
-    gap: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
   }
+
   .footer .top .btnft {
-    margin-top: 5rem;
-    width: 12rem;
-    height: 5rem;
-    line-height: 5rem;
-    font-size: 1.2rem;
+    position: relative;
+    width: 8rem;
+    height: 3rem;
+    line-height: 3rem;
+    background-color: transparent;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    border: 2px solid var(--btn-color);
+    font-family: "Press Start 2P", cursive;
+    font-size: 0.8rem;
+    color: var(--btn-color);
+    font-weight: bold;
+    transition: 0.3s ease-out;
+    text-transform: uppercase;
   }
+
+  .footer .top .btnft:hover {
+    background-color: var(--btn-color);
+    color: #fff;
+  }
+
   .footer .bot p {
-    margin-top: 24rem;
-    font-size: 1.8rem;
+    margin-top: 2.8rem;
+    font-size: 1rem;
+    color: aliceblue;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    letter-spacing: 1px;
   }
 }
